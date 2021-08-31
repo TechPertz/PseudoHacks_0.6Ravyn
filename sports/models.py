@@ -19,7 +19,7 @@ class Team(models.Model):
     id = models.AutoField
     team_name = models.CharField(max_length=50)
     sports = models.CharField(max_length=50)
-    vacant = models.IntegerField(default=0)
+    filled = models.IntegerField(default=0)
     required = models.IntegerField(default=0)
     description = models.CharField(max_length=300, default="")
 
