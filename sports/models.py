@@ -14,3 +14,14 @@ class Location(models.Model):
     location = models.PointField()
     address = models.CharField(max_length=100)
     city = models.CharField(max_length=50)
+
+class Team(models.Model):
+    id = models.AutoField
+    team_name = models.CharField(max_length=50)
+    sports = models.CharField(max_length=50)
+    vacant = models.IntegerField(default=0)
+    required = models.IntegerField(default=0)
+    description = models.CharField(max_length=300, default="")
+
+    def __str__(self):
+        return self.team_name

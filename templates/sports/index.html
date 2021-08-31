@@ -10,7 +10,7 @@
     {% for location in locations %}
         <li>
         {{ location.name }}: 
-        {{location.location}}
+        {% comment %} {{location.location}} {% endcomment %}
         </li>
     {% endfor %}
     </ul>
