@@ -1,0 +1,132 @@
+.loc {
+  width: 100vw;
+  height: 90vh;
+  h1 {
+    height: 10%;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.6rem;
+    line-height: 0 auto;
+    margin-top: 20px;
+    color: #404654;
+    text-align: center;
+  }
+
+  .inner-loc {
+    height: 92%;
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    .filter {
+      width: 24%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      #discrete-slider{
+        font-family: Poppins;
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height:100%;
+  
+    color: #404654;
+    
+      }
+    }
+    .main {
+      width: 70%;
+      height: 90%;
+      background-color: white;
+      overflow: scroll;
+
+      .main_flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        .locCard {
+          width: 96%;
+          height: 30%;
+          background: white;
+          margin-bottom: 20px;
+          border-radius: 15px;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          padding: 4px;
+          .inner_locCard_1 {
+            height: 90%;
+            width: 20%;
+            overflow-y: hidden;
+            border-radius: 15px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .inner_locCard_2 {
+            height: 90%;
+            width: 76%;
+
+            button {
+              width: 90%;
+              margin-top: 1vh;
+              padding: 0.4vh;
+              justify-self: flex-end;
+              color: #a75102;
+              background-color: #ffdd86;
+              &:hover {
+                background-color: #ffe8ae;
+              }
+              border-radius: 12px;
+
+              box-shadow: 0px 4px 7px rgba(202, 148, 125, 0.49);
+
+              font-family: Poppins;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+            }
+            p {
+              font-family: Poppins;
+              font-style: normal;
+              font-weight: 600;
+              padding: 6px;
+              font-size: 24px;
+              line-height: 100%;
+              color: #404654;
+              margin-bottom: 0px;
+
+              span {
+                color: green;
+                background-color: rgb(183, 255, 183);
+                font-size: 16px;
+                font-weight: 500;
+                padding: 5px 20px;
+                border-radius: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .box {
+      height: 96%;
+      background-color: white;
+      background: #f0f0f0;
+      box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.35);
+      border-radius: 14px;
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
